@@ -1,15 +1,12 @@
 # Daily Practice Repo
 
-<aside>
-➡️ Developing Development Skills.
+<img src="http://github-readme-streak-stats.herokuapp.com?user=theriyazo&theme=dark&date_format=M%20j%5B%2C%20Y%5D&ring=69DF69&fire=69DF69&currStreakLabel=69DF69&background=0D1117" alt="riyazahamad github streak"/>
 
-</aside>
+> ➡️ Developing Development Skills.
+> - Daily Practice repo is used for daily skills practice.
+> - Consistency is key
+> - RiyazAhamad GitHub graph is witnessing the consistency.
 
-- Daily Practice repo is used for daily skills practice.
-- Consistency is key
-- RiyazAhamad GitHub graph is witnessing the consistency.
-
-<img align="left" src="[http://github-readme-streak-stats.herokuapp.com?user=theriyazo&theme=dark&date_format=M j[%2C Y]&ring=69DF69&fire=69DF69&currStreakLabel=69DF69&background=0D1117](http://github-readme-streak-stats.herokuapp.com/?user=theriyazo&theme=dark&date_format=M%20j%5B%2C%20Y%5D&ring=69DF69&fire=69DF69&currStreakLabel=69DF69&background=0D1117)" alt="riyazahamad github streak"/>
 
 # Projects ⬇️
 
@@ -24,7 +21,7 @@ Status : 🪧 [Live](http://www.theriyazo.com/guessmynumber)
 - If the score reaches 0, Game Over!
 - And If the user makes correct guess, the score will be recorded as the Highest Score, and the UI feedback will be given.
 
-## ✅ Pig Game
+## ⚒️ Pig Game
 
 Status : 🪧 Working...
 
