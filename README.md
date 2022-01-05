@@ -6,6 +6,9 @@
 > - Daily Practice repo is used for daily skills practice.
 > - Consistency is key
 > - RiyazAhamad GitHub graph is witnessing the consistency.
+<br>
+
+🦾 [Projects](https://github.com/theriyazo/Daily-Practice-Repo#projects-%EF%B8%8F)
 
 
 # Projects ⬇️
