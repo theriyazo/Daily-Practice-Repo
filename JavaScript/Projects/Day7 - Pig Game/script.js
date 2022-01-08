@@ -80,6 +80,7 @@ btnHold.addEventListener('click', function () {
         'Winner 🎉';
 
       document.querySelector(`#score--${activePlayer}`).style.color = '#FFFFFF';
+      document.querySelector(`#score--${activePlayer}`).style.color = '#FFFFFF';
 
       document.querySelector(
         `.current--winner${activePlayer}`
@@ -95,9 +96,8 @@ btnHold.addEventListener('click', function () {
       document.getElementById(`current--${activePlayer}`).textContent = 0;
       document.getElementById(`current--${activePlayer}`).style.color =
         '#13d271';
-      document.querySelector(
-        `.current-winner-label--${activePlayer}`
-      ).style.color = '#13d271';
+      console.log(`label--${activePlayer}`);
+      document.getElementById(`label--${activePlayer}`).style.color = '#13d271';
     } else {
       switchPlayerAndResetScore();
     }
