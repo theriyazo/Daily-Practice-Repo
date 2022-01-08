@@ -73,13 +73,14 @@ btnHold.addEventListener('click', function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
+
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove('player--active');
+
       document.querySelector(`#name--${activePlayer}`).textContent =
         'Winner 🎉';
 
-      document.querySelector(`#score--${activePlayer}`).style.color = '#FFFFFF';
       document.querySelector(`#score--${activePlayer}`).style.color = '#FFFFFF';
 
       document.querySelector(
@@ -96,7 +97,9 @@ btnHold.addEventListener('click', function () {
       document.getElementById(`current--${activePlayer}`).textContent = 0;
       document.getElementById(`current--${activePlayer}`).style.color =
         '#13d271';
+
       console.log(`label--${activePlayer}`);
+
       document.getElementById(`label--${activePlayer}`).style.color = '#13d271';
     } else {
       switchPlayerAndResetScore();
@@ -105,11 +108,37 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', function () {
+  player0EL.classList.add('player--active');
+  player1EL.classList.remove('player--active');
+
   scores = [0, 0];
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.remove('player--winner');
+
+  document.querySelector(`#name--${activePlayer}`).textContent = `PLAYER ${
+    activePlayer + 1
+  }`;
+
+  document.querySelector(`#score--${activePlayer}`).style.color = '#39DFCA';
+
+  document.querySelector(
+    `.current--winner${activePlayer}`
+  ).style.backgroundColor = '#39DFCA';
+
+  document.getElementById(`current--${activePlayer}`).style.color = '#FFFFFF';
+  document.getElementById(`label--${activePlayer}`).style.color = '#FFFFFF';
+
+  document.getElementById(`current--${activePlayer}`).textContent = 0;
   activePlayer = 0;
   playing = true;
+  currnetScore = 0;
+
   score0El.textContent = 0;
   score1El.textContent = 0;
-  currnetScore = 0;
+
+  document.querySelector(`body`).style.backgroundImage =
+    'linear-gradient(to top left, #88ECDF 0%, #74E9AE 100%)';
+
   diceEl.classList.add('hide'); // hide dice at first
 });
