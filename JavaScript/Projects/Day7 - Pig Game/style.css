@@ -169,3 +169,6 @@ main {
   font-weight: 700;
   color: #FFFFFF;
 }
+.player--winner #score {
+  color : #FFFFFF;
+}
