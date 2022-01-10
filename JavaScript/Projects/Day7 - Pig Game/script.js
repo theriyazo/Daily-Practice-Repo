@@ -27,10 +27,7 @@ const curWinner0El = document.querySelector('.current--winner0');
 const curWinner1El = document.querySelector('.current--winner1');
 
 // Starting conditions
-let scores = [0, 0];
-let activePlayer = 0;
-let playing = true;
-let currnetScore = 0;
+let scores, activePlayer, playing, currnetScore;
 
 // Resetting to starting conditions
 const init = function () {
@@ -157,7 +154,5 @@ btnHold.addEventListener('click', function () {
   }
 });
 
-btnNew.addEventListener('click', function () {
-  // ResetEverything and start a new game
-  init();
-});
+// ResetEverything and start a new game
+btnNew.addEventListener('click', init);
