@@ -25,12 +25,6 @@ const restaurant = {
     const items = ["Pasta", "Salad"];
     return items;
   },
-
-  orderPasta(ing1, ing2, ing3) {
-    console.log(
-      `You\'re Order of pasta with ${ing1}, ${ing2} and ${ing3} is received!`
-    );
-  },
 };
 
 // console.log(restaurant.openingHours.mon.open); // Error
@@ -56,8 +50,9 @@ for (const day of days) {
 // On sat, We are 0
 // On sun, We are Closed!
 
-// Nullish Coalesence and Optional Chaining
+// Nullish Coalescing and Optional Chaining
 console.log(restaurant.order?.(0, 1) ?? "Method Does not exist!");
+// Output ⏬
 // (2) ['Pasta', 'Salad']
 
 // Optional Chaining on Arrays
@@ -65,5 +60,5 @@ const users = [
   { fullName: "RiyazAhamad", email: "theriyazhosalli1@gmail.com" },
 ];
 console.log(users[0]?.fullName ?? "User fullName doesn't exist");
-
-
+// Output ⏬
+// RiyazAhamad

@@ -21,16 +21,6 @@ const restaurant = {
       close: 24,
     },
   },
-  order(a, b) {
-    const items = ["Pasta", "Salad"];
-    return items;
-  },
-
-  orderPasta(ing1, ing2, ing3) {
-    console.log(
-      `You\'re Order of pasta with ${ing1}, ${ing2} and ${ing3} is received!`
-    );
-  },
 };
 
 const question = new Map([
@@ -48,25 +38,35 @@ console.log(question);
 
 const hoursMap = new Map(Object.entries(restaurant.openingHours));
 console.log(hoursMap);
+// Output ⏬ 
+// Map(3) {'thu' => {…}, 'fri' => {…}, 'sat' => {…}}
 
 // Quiz app
 console.log(question.get("question"));
+// Output ⏬ 
+// Whats the best programming language?
+
 // For loop
 for (const [key, value] of question) {
   if (key === Number(key)) {
     console.log(key + ": " + value);
   }
 }
+// Output ⏬ 
 // Whats the best programming language?
 // 1: C
 // 2: Java
 // 3: JavaScript
+
+
 const answer = 3;
 question.get('correct') === answer ? console.log(question.get(true)) : console.log(question.get(false));
+// Output ⏬ 
 // Correct!
 
 // Converting map to array
 console.log([...question]);
+// Output ⏬ 
 // (7) [Array(2), Array(2), Array(2), Array(2), Array(2), Array(2), Array(2)]
 
 // Map methods
@@ -74,7 +74,7 @@ console.log(question.entries());
 console.log(question.has('correct'));
 console.log([...question.keys()]);
 console.log([...question.values()]);
-
+// Output ⏬ 
 // MapIterator {'question' => 'Whats the best programming language?', 1 => 'C', 2 => 'Java', 3 => 'JavaScript', true => 'Correct!', …}
 // true
 // (7) ['question', 1, 2, 3, true, false, 'correct']

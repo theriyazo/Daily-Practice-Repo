@@ -25,12 +25,6 @@ const restaurant = {
     const items = ["Pasta", "Salad"];
     return items;
   },
-
-  orderPasta(ing1, ing2, ing3) {
-    console.log(
-      `You\'re Order of pasta with ${ing1}, ${ing2} and ${ing3} is received!`
-    );
-  },
 };
 
 const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
@@ -39,6 +33,7 @@ const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 // returns array containing key names
 const properties = Object.keys(restaurant.openingHours);
 console.log(properties);
+// Output ⏬
 // (3) ['thu', 'fri', 'sat']
 
 let openRestrnt = `We are open on ${properties.length} days: `;
@@ -46,6 +41,7 @@ for (const day of Object.keys(restaurant.openingHours)) {
   openRestrnt += `${day} `;
 }
 console.log(openRestrnt);
+// Output ⏬
 // We are open on thu
 // We are open on fri
 // We are open on sat
@@ -53,6 +49,7 @@ console.log(openRestrnt);
 // 2️⃣ PROPERTY VALUES -> Object.values(<objectName>)
 const values = Object.values(restaurant.openingHours);
 console.log(values);
+// Output ⏬
 // (3) [{…}, {…}, {…}]
 // 0: {open: 12, close: 22}
 // 1: {open: 11, close: 23}
@@ -61,6 +58,7 @@ console.log(values);
 for (const item of values) {
   console.log(item);
 }
+// Output ⏬
 // {open: 12, close: 22}
 // {open: 11, close: 23}
 // {open: 0, close: 24}
@@ -69,6 +67,7 @@ for (const item of values) {
 // Object.entries() retrn an array containing key & value of entier object
 const entries = Object.entries(restaurant.openingHours);
 console.log(entries);
+// Output ⏬
 // (3) [Array(2), Array(2), Array(2)]
 // 0: (2) ['thu', {…}]
 // 1: (2) ['fri', {…}]
@@ -77,3 +76,7 @@ console.log(entries);
 for (const [key, { open, close }] of entries) {
   console.log(`On the ${key}, we are open on ${open ? open : "24x7"}`);
 }
+// Output ⏬
+// On the thu, we are open on 12
+// On the fri, we are open on 11
+// On the sat, we are open on 24x7
