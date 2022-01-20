@@ -4,6 +4,7 @@
 // split with string parameter will split the string at where the passed split parameter occuer
 // and stores the splited string in an array
 console.log("a+very+nice+starting".split("+"));
+// Output ⏬
 // (4) ['a', 'very', 'nice', 'starting']
 console.log("RiyazAhamad Hosalli".split(" "));
 // (2) ['RiyazAhamad', 'Hosalli']
