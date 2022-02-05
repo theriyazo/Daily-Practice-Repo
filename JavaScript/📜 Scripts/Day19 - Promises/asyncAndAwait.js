@@ -17,17 +17,17 @@
 //   });
 // }
 
-// myPromis(true)
-//   .then((res) => {
-//     console.log(res);
-//     return processRes(res);
-//   })
-//   .then((res) => {
-//     console.log(res);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+myPromis(true)
+.catch((err) => {
+  console.log(err);
+})
+  .then((res) => {
+    console.log(res);
+    return processRes(res);
+  })
+  .then((res) => {
+    console.log(res);
+  });
 
 function myPromis2() {
   return new Promise((res, rej) => {
@@ -48,14 +48,14 @@ function processResponse(response) {
   });
 }
 
-async function runAsync() {
-  try {
-    const result1 = await myPromis2();
-    console.log(result1);
-    const result2 = await processResponse(result1);
-    console.log(result2);
-  } catch (err) {
-    console.log(err);
-  }
-}
-runAsync();
+// async function runAsync() {
+//   try {
+//     const result1 = await myPromis2();
+//     console.log(result1);
+//     const result2 = await processResponse(result1);
+//     console.log(result2);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+// runAsync();
