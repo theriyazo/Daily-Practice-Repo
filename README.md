@@ -26,7 +26,7 @@ Status : 🪧 [Live](http://www.theriyazo.com/guessmynumber)
 
 ## ⚒️ Pig Game
 
-Status : 🪧 Working...
+Status : 🪧 [Live](http://www.theriyazo.com/dicegame)
 
 - It’s a two player game.
 - Where the each player is given chance to roll the dice until they get 1.
