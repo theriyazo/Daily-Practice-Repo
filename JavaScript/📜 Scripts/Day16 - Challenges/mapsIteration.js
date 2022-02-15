@@ -32,12 +32,14 @@ const question = new Map([
   [false, "Try Again."],
   ["correct", 3],
 ]);
+
 console.log(question);
 
-// To convert Objects to map
 
+// To convert Objects to map
 const hoursMap = new Map(Object.entries(restaurant.openingHours));
 console.log(hoursMap);
+
 // Output ⏬ 
 // Map(3) {'thu' => {…}, 'fri' => {…}, 'sat' => {…}}
 
