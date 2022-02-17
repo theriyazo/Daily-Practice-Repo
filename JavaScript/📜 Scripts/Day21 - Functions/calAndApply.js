@@ -30,6 +30,7 @@ const indiGo = {
 
 // 1️⃣ call()
 book.call(indiGo, 731, "Sundereshwar");
+// Output ⤵️
 // Sundereshwar booked a seat on IndiGo flight ING731
 
 
@@ -38,6 +39,7 @@ book.call(indiGo, 731, "Sundereshwar");
 const flightData = [234, "Meenakshi"];
 
 // book.apply(indiGo, flightData);
+// Output ⤵️
 // Meenakshi booked a seat on IndiGo flight ING234
 
 // A better way to do this is by using call() method
